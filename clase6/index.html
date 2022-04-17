@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+
+        <section>
+            <h1>Clase 6</h1>
+            <fieldset>
+                <legend>
+                    Alta de Usuario
+                </legend>
+                <form action="AltaUsuario.html">
+                    <input type="file" name="dni-frente" required><!--required es para que sea obligatorio completar el campo-->   <!--añadir acrchivos-->                 
+                    <input type="hidden" value="valoroculto" name="campohidden"><!--es un campo que está pero el usuario no lo ve-->
+                    
+                    <input type="url" name="url" required placeholder="ej: http:/dominio.com.ar">
+                    <input type="text" name="nombre" required placeholder="ingrese algo">
+                    <input type="text" placeholder="valores entre o y 9" required pattern="(0-9)" title="solo numeros entre 0 y 9"><!--pattern="" e spara expresiones regulares-->
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </fieldset>        
+        </section>
+
+    </main>
+    
+</body>
+</html>
