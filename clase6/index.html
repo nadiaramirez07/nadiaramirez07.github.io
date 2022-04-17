@@ -16,13 +16,44 @@
                 <legend>
                     Alta de Usuario
                 </legend>
-                <form action="AltaUsuario.html">
+                <form action="AltaUsuario.html" method="post">
                     <input type="file" name="dni-frente" required><!--required es para que sea obligatorio completar el campo-->   <!--añadir acrchivos-->                 
                     <input type="hidden" value="valoroculto" name="campohidden"><!--es un campo que está pero el usuario no lo ve-->
                     
                     <input type="url" name="url" required placeholder="ej: http:/dominio.com.ar">
                     <input type="text" name="nombre" required placeholder="ingrese algo">
                     <input type="text" placeholder="valores entre o y 9" required pattern="(0-9)" title="solo numeros entre 0 y 9"><!--pattern="" e spara expresiones regulares-->
+                    <br>
+                    <textarea name="info-extra" cols="50" rows="5"></textarea><!--para crear una caja de texto,cols es columnas y rows son filas-->
+                    <hr>
+                    <!--selecion de multiples valores-->
+                    <select multiple>
+                        <optgroup label="Animales">
+                            <option>León</option>
+                            <option>Tigre</option>                 
+                        </optgroup>
+                        <optgroup label="colores">
+                            <option>Rojo</option>
+                            <option>Verde</option>
+                            <option>Azul</option>
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <input list="browser" name="databrowser"><!--para asociar un input a una lista-->
+                    <datalist id="browser" name="databrowser"><!--es parecido a un select, set de datos para autocompletar. Y el id= es para sincronizarlo con el input-->
+                        <option>EDGE</option>
+                        <option>Chrome</option>
+                        <option>Firefox</option>
+                        <option>Opera</option>
+                    </datalist>
+
+                    <br><!--para asociar un label a un elemento digo que: label es para.....<label for="buscar"></label>-->
+                    <label for="buscar">Tipo search</label>
+                    <input type="search" name="buscar" id="buscar">
+                    <br>
+                    <label for="buscarText">Tipo text</label>
+                    <input type="text" name="buscarText">
 
                     <input type="submit" value="Enviar">
                 </form>
