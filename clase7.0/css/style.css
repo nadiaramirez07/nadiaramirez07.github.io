@@ -1,0 +1,43 @@
+/*El asterisco es un selector universal *{background-color: predomina por sobre el boody o head de html}
+*{
+    background-color: blue;
+}*/
+/*no entra la etiqueta de html porque css ya es estilo*/
+body{
+    background-color: aqua;
+}
+/*aplicar estilo por id usando # (numeral)*/
+#idsection{
+    background-color: blueviolet;
+}
+
+#nav{
+    background-color: beige;
+}
+
+/*estilos por clase con un . (punto) mas el nombre del class*/
+.links{
+    background-color: rgb(238, 30, 238);
+}
+
+/*Puedo posicionarme sobre un elemento dentro de Inspeccionar en la web, copiar la regla del formato y pegarla en el archivo css para luego recargar la pagina y poder realizar los cambios pertinentes*/
+/*haciendo esto puedo alterar los estilos que el navegador le da por predeterminados a la pagina*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/*podemos alterar las etiquetas por defecto por medio de css apuntando a las etiquetas por medio de un atributo*/
+/*selector de etiquetas*/
+a{
+    text-decoration: none;
+}
+
+#linkActive {
+    color: burlywood;
+}

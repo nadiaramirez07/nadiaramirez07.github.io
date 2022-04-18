@@ -1,0 +1,18 @@
+/*El asterisco es un selector universal *{background-color: predomina por sobre el boody o head de html}
+*{
+    background-color: blue;
+}*/
+/*no entra la etiqueta de html porque css ya es estilo*/
+body{
+    background-color: aqua;
+}
+
+.container {
+    background-color: rgb(60, 221, 95);
+}
+.classsection {
+    background-color: rgb(7, 140, 158);
+}
+.header {
+    background-color: antiquewhite;
+}
